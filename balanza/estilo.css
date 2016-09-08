@@ -1,0 +1,93 @@
+html {
+    font-family: Arial;
+    }
+
+.pantalla {
+        border-top: 4px solid orange;
+        margin: auto;
+        display: none;
+        margin-top: 40px;
+}
+
+#inicio {
+    display: block;
+}
+
+.boton_grande {
+    float: left;
+    height: 400px;
+    margin: 4%;
+    width: 40%;
+    border: 4px solid orange;
+    position: relative;
+    text-align:center;
+    box-shadow: 4px 4px 4px rgba(0,0,0, .5);
+}
+.boton_grande span{
+
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    text-align: center;
+    color: orange;
+    font-size: 20pt;
+}
+.boton_grande img {
+    width: 80%;
+    text-align: center;
+   
+}
+
+#verduras {
+    float: right;
+}
+
+.separador : {
+    float:left;
+    width: 10%;
+}
+
+.item {
+    width : 12%;
+    float: left;
+    text-align: center;
+    border : 2px solid orange;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    height: 170px;
+    text-decoration: none;
+    color: black;
+}
+.item img {
+    width: 90%;
+    display: block;
+    height: 100px;
+}
+.item span {
+    float: left;
+    font-size: 15pt;
+
+}
+#btn-inicio {
+    display: block;
+    clear: both;
+    background: #499749;
+    color: white;
+    font-size:20pt;
+    text-decoration: none;
+    padding: 10px;
+    width: 200px;
+    margin: 5px;
+
+}
+#ticket {
+    text-align: center;
+}
+#ticket a {
+    border: 2px solid orange;
+    margin: auto;
+}
+#ticket img {
+    width: 20%
+}

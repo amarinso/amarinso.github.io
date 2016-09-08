@@ -1,0 +1,42 @@
+<html>
+
+		<link rel="stylesheet" type="text/css" href='estilo.css' />
+<div id="inicio" class="pantalla">
+  <a href="#frutas" id="btn-frutas" class="boton_grande btn"><img src="frutas.jpg"/><span>Frutas</span></a><a href="#frutas" id="btn-verduras" class="boton_grande btn"><img src="verduras.jpg"/><span>Verduras</span></a>
+</div>
+<div id="frutas" class="pantalla">
+	<a href="#inicio" class="btn" id="btn-inicio">INICIO</a>
+	<a href="#ticket" id="1" class="item btn"><span>1</span><img src="platano.jpg"/>PLATANO</a>
+	<a href="#ticket" id="2" class="item btn"><span>2</span><img src="platano_macho.jpg"/>PLATANO MACHO</a>
+	<a href="#ticket" id="3" class="item btn"><span>3</span><img src="manzana_braeburn.jpg"/>MANZANA BRAEBURN</a>
+	<a href="#ticket" id="4" class="item btn"><span>4</span><img src="roja.jpg"/>MANZANA ROJA</a>
+	<a href="#ticket" id="5" class="item btn"><span>5</span><img src="uva.jpg"/>UVA NEGRA</a>
+	<a href="#ticket" id="6" class="item btn"><span>6</span><img src="sandia.jpg"/>SANDIA</a>
+	<a href="#ticket" id="7" class="item btn"><span>7</span><img src="kiwi.jpg"/>KIWI VERDE</a>
+	<a href="#ticket" id="8" class="item btn"><span>8</span><img src="pomelo.jpg"/>POMELO</a>
+	<a href="#ticket" id="9" class="item btn"><span>9</span><img src="banana.jpg"/>BANANA</a>
+	<a href="#ticket" id="10" class="item btn"><span>10</span><img src="pera.jpg"/>PERA CONFERENCIA</a>
+	<a href="#ticket" id="11" class="item btn"><span>11</span><img src="papaya.jpg"/>PAPAYA</a>
+	<a href="#ticket" id="12" class="item btn"><span>12</span><img src="nispero.jpg"/>NISPERO</a>
+	<a href="#ticket" id="13" class="item btn"><span>13</span><img src="golden.jpg"/>MANZANA GOLDEN</a>
+	<a href="#ticket" id="14" class="item btn"><span>14</span><img src="melon.jpg"/>MELON PIEL SAPO</a>
+</div>
+<div id="ticket" class="pantalla">
+	<a href="#inicio" class="btn"><img src="ticket.jpg"/></a>
+</div>
+
+<script>
+var $ = function(id){
+	return document.getElementById(id);
+}
+var $$ = function(cls){
+	return Array.prototype.slice.call(document.getElementsByClassName(cls));
+}
+$$('btn').forEach(function(btn){
+	btn.onclick=function(ev){
+		$$('pantalla').forEach(function(x){ x.style.display='none';});
+		$(this.href.substr(this.href.indexOf('#')+1,100)).style.display='block';
+	}
+});
+</script>
+
